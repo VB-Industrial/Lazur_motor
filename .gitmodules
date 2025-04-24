@@ -1,0 +1,6 @@
+[submodule "VB/libcxxcanard"]
+	path = VB/libcxxcanard
+	url = https://github.com/VBCores/libcxxcanard.git
+[submodule "VB/libvoltbro"]
+	path = VB/libvoltbro
+	url = https://github.com/VBCores/libvoltbro.git

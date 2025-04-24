@@ -1,0 +1,102 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "clean",
+            "group": "build",
+            "type": "shell",
+            "command": "rm -rf build",
+            "options": {
+                "statusbar": {
+                    "color": "#ff8b8b",
+                    "label": "$(clear-all) Clean",
+                    "detail": "Clean ALL"
+                }
+            }
+        },
+        {
+            "label": "Configure_Debug",
+            "group": "build",
+            "type": "shell",
+            "command": "cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "statusbar": {
+                    "color": "#8bdeff",
+                    "label": "$(gear) Debug",
+                    "detail": "Cmake configure Debug"
+                }
+            }
+        },
+        {
+            "label": "Configure_RelWithDebInfo",
+            "group": "build",
+            "type": "shell",
+            "command": "cmake -S . -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "statusbar": {
+                    "color": "#8bdeff",
+                    "label": "$(gear) RelWithDebInfo",
+                    "detail": "Cmake configure RelWithDebInfo"
+                }
+            }
+        },
+        {
+            "label": "Configure_Release",
+            "group": "build",
+            "type": "shell",
+            "command": "cmake -S . -B build -DCMAKE_BUILD_TYPE=Release",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "statusbar": {
+                    "color": "#8bdeff",
+                    "label": "$(gear) Release",
+                    "detail": "Cmake configure Release"
+                }
+            }
+        },
+        {
+            "label": "Configure_MinSizeRel",
+            "group": "build",
+            "type": "shell",
+            "command": "cmake -S . -B build -DCMAKE_BUILD_TYPE=MinSizeRel",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "statusbar": {
+                    "color": "#8bdeff",
+                    "label": "$(gear) MinSizeRel",
+                    "detail": "Cmake configure MinSizeRel"
+                }
+            }
+        },
+        {
+            "label": "build",
+            "group": "build",
+            "type": "shell",
+            "command": "cmake --build build",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "statusbar": {
+                    "color": "#8bff97",
+                    "label": "$(code) Build",
+                    "detail": "Build"
+                }
+            }
+        },
+        {
+            "type": "shell",
+            "label": "flash",
+            "group": "build",
+            "command": "openocd -f interface/stlink-v2.cfg -f target/stm32g4x.cfg -c \"program ${workspaceFolder}/build/${workspaceFolderBasename}.hex verify reset exit\"",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "statusbar": {
+                    "color": "#8bff97",
+                    "label": "$(code) Flash",
+                    "detail": "Flash MCU"
+                }
+            }
+        }
+    ]
+}

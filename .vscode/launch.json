@@ -1,0 +1,64 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "STM32",
+            "cwd": "${workspaceRoot}",
+            "executable": "build/${workspaceFolderBasename}.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            //"preLaunchTask": "build",
+            "gdbPath": "gdb-multiarch",
+            // Add you svd file
+            // "svdFile": "${workspaceRoot}/Docs/STM32F3x4.svd",
+            // Set you programmer and trget controller
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32g4x.cfg"
+            ],
+            // "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "swoConfig": {
+                "enabled": true,
+                "swoFrequency": 2000000,
+                "cpuFrequency": 170000000,
+                "decoders": [
+                    {
+                        "port": 0,
+                        "type": "console"
+                    }
+                ]
+            }
+        }
+    ]
+}
+
+
+
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Debug",
+//             "type": "cppdbg",
+//             "request": "launch",
+//             "miDebuggerPath": "/usr/bin/gdb-multiarch",
+//             "miDebuggerArgs": "--cd=${workspaceFolder} --nx",
+//             "MIMode": "gdb",
+//              "program": "${workspaceFolder}/build/${workspaceFolderBasename}.elf",
+//               "setupCommands": [
+//                 {"text": "set remotetimeout 5"},
+//                 {"text": "target remote localhost:3333"},
+//                 {"text": "monitor reset halt"},
+//                 {"text": "file ${workspaceFolder}/build/${workspaceFolderBasename}.elf"},
+//                 {"text": "load"},
+//                 {"text": "break main","ignoreFailures": true}
+//             ],
+//             "launchCompleteCommand": "None",
+//             "externalConsole": false,
+//             "cwd": "${workspaceFolder}"
+//         }
+//     ]
+// }
