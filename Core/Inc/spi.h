@@ -32,8 +32,11 @@ extern "C" {
 
 /* USER CODE END Includes */
 
-/* USER CODE BEGIN Private defines */
+extern SPI_HandleTypeDef hspi1;
 
+extern SPI_HandleTypeDef hspi3;
+
+/* USER CODE BEGIN Private defines */
 /* USER CODE END Private defines */
 
 void MX_SPI1_Init(void);

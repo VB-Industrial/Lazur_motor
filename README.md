@@ -13,5 +13,23 @@ Lazur motor FOC repo
 7. Меняем/редактируем CMakeLists.txt пример можно взять из этого пакета
 8. Жмем на конфигурирование типа сборки, для начала можно RelWithDebInfo
 9. Жмем на билд
-10. Жмем на flash
+10. Если WSL, подключаем ST-Link:
+'usbipd list'
+
+вывод какой-то такой:
+
+'Connected:
+BUSID  VID:PID    DEVICE                                                        STATE
+1-5    046d:0825  Logi C270 HD WebCam                                           Not shared
+1-6    045e:074b  USB-устройство ввода                                          Not shared
+1-10   0951:16e4  USB-устройство ввода                                          Not shared
+1-12   8087:0aa7  Intel(R) Wireless Bluetooth(R)                                Not shared
+3-3    0483:374b  ST-Link Debug, Запоминающее устройство для USB, STMicroel...  Shared'
+
+'usbipd bind --busid 3-3'
+
+'usbipd attach --wsl --busid 3-3'
+11. Жмем Flash
+
 11. Если всё ок жмем на Debug проверяем, что всё работает. 
+12. Переходим к переводу мейна из C в С++

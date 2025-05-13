@@ -30,7 +30,15 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "AS5147.h"
+#include "arm_math.h"
+//#include "my_helpers.h"
+//#include "communication.h"
+    
+//#include "Transform.h"
+//#include "math_ops.h"
 
+//#include "eeprom.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -107,7 +115,9 @@ int main(void)
   MX_SPI1_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+  HAL_TIM_Base_Start_IT(&htim7);
 
+  app();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -117,8 +127,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_2);
-    HAL_Delay(1000);
+
   }
   /* USER CODE END 3 */
 }

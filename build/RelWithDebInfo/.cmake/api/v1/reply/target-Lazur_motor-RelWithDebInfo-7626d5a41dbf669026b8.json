@@ -11,9 +11,9 @@
 		"commands" : 
 		[
 			"add_executable",
+			"target_link_libraries",
 			"target_compile_definitions",
 			"add_definitions",
-			"target_link_libraries",
 			"target_include_directories",
 			"target_sources"
 		],
@@ -35,31 +35,31 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 82,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 24,
+				"line" : 81,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 47,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 68,
+				"line" : 67,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 62,
+				"line" : 61,
 				"parent" : 0
 			}
 		]
@@ -76,40 +76,32 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"define" : "ARM_MATH_CM4"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"define" : "MONITOR"
 				},
 				{
-					"backtrace" : 3,
-					"define" : "STM32"
-				},
-				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"define" : "STM32G431xx"
 				},
 				{
 					"backtrace" : 4,
-					"define" : "USE_FULL_LL_DRIVER"
-				},
-				{
-					"backtrace" : 4,
-					"define" : "USE_HAL_DRIVER"
+					"define" : "STM32_G"
 				},
 				{
 					"backtrace" : 2,
+					"define" : "USE_HAL_DRIVER"
+				},
+				{
+					"backtrace" : 3,
 					"define" : "__FPU_PRESENT"
 				}
 			],
 			"includes" : 
 			[
-				{
-					"backtrace" : 5,
-					"path" : "/mnt/d/projects/Lazur_motor/Inc"
-				},
 				{
 					"backtrace" : 5,
 					"path" : "/mnt/d/projects/Lazur_motor/App"
@@ -128,26 +120,30 @@
 				},
 				{
 					"backtrace" : 5,
+					"path" : "/mnt/d/projects/Lazur_motor/VB/libvoltbro/voltbro"
+				},
+				{
+					"backtrace" : 5,
 					"path" : "/mnt/d/projects/Lazur_motor/Drivers/CMSIS/DSP/Include"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Core/Inc"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
 				}
 			],
@@ -176,7 +172,10 @@
 				11,
 				12,
 				13,
-				14
+				14,
+				15,
+				16,
+				17
 			]
 		},
 		{
@@ -189,40 +188,32 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"define" : "ARM_MATH_CM4"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"define" : "MONITOR"
 				},
 				{
-					"backtrace" : 3,
-					"define" : "STM32"
-				},
-				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"define" : "STM32G431xx"
 				},
 				{
 					"backtrace" : 4,
-					"define" : "USE_FULL_LL_DRIVER"
-				},
-				{
-					"backtrace" : 4,
-					"define" : "USE_HAL_DRIVER"
+					"define" : "STM32_G"
 				},
 				{
 					"backtrace" : 2,
+					"define" : "USE_HAL_DRIVER"
+				},
+				{
+					"backtrace" : 3,
 					"define" : "__FPU_PRESENT"
 				}
 			],
 			"includes" : 
 			[
-				{
-					"backtrace" : 5,
-					"path" : "/mnt/d/projects/Lazur_motor/Inc"
-				},
 				{
 					"backtrace" : 5,
 					"path" : "/mnt/d/projects/Lazur_motor/App"
@@ -241,26 +232,30 @@
 				},
 				{
 					"backtrace" : 5,
+					"path" : "/mnt/d/projects/Lazur_motor/VB/libvoltbro/voltbro"
+				},
+				{
+					"backtrace" : 5,
 					"path" : "/mnt/d/projects/Lazur_motor/Drivers/CMSIS/DSP/Include"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Core/Inc"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
 				}
 			],
@@ -275,9 +270,6 @@
 			},
 			"sourceIndexes" : 
 			[
-				15,
-				16,
-				17,
 				18,
 				19,
 				20,
@@ -333,40 +325,32 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"define" : "ARM_MATH_CM4"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"define" : "MONITOR"
 				},
 				{
-					"backtrace" : 3,
-					"define" : "STM32"
-				},
-				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"define" : "STM32G431xx"
 				},
 				{
 					"backtrace" : 4,
-					"define" : "USE_FULL_LL_DRIVER"
-				},
-				{
-					"backtrace" : 4,
-					"define" : "USE_HAL_DRIVER"
+					"define" : "STM32_G"
 				},
 				{
 					"backtrace" : 2,
+					"define" : "USE_HAL_DRIVER"
+				},
+				{
+					"backtrace" : 3,
 					"define" : "__FPU_PRESENT"
 				}
 			],
 			"includes" : 
 			[
-				{
-					"backtrace" : 5,
-					"path" : "/mnt/d/projects/Lazur_motor/Inc"
-				},
 				{
 					"backtrace" : 5,
 					"path" : "/mnt/d/projects/Lazur_motor/App"
@@ -385,26 +369,30 @@
 				},
 				{
 					"backtrace" : 5,
+					"path" : "/mnt/d/projects/Lazur_motor/VB/libvoltbro/voltbro"
+				},
+				{
+					"backtrace" : 5,
 					"path" : "/mnt/d/projects/Lazur_motor/Drivers/CMSIS/DSP/Include"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Core/Inc"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 2,
 					"path" : "/mnt/d/projects/Lazur_motor/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
 				}
 			],
@@ -427,6 +415,11 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/mnt/d/projects/Lazur_motor/Drivers/CMSIS/DSP/Lib/GCC/libarm_cortexM4lf_math.a",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
@@ -517,6 +510,24 @@
 	],
 	"sources" : 
 	[
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "App/app.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "App/common.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "App/communications.cpp",
+			"sourceGroupIndex" : 0
+		},
 		{
 			"backtrace" : 6,
 			"compileGroupIndex" : 0,
@@ -620,271 +631,253 @@
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/main.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/gpio.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/adc.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/cordic.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/dma.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/fdcan.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/i2c.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/spi.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/tim.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/usart.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/stm32g4xx_it.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/stm32g4xx_hal_msp.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 1,
-			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_utils.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 1,
-			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 1,
-			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_gpio.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
-			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_cordic.c",
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cordic.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 1,
-			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_fdcan.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_i2c_ex.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
-			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_spi.c",
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/system_stm32g4xx.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/sysmem.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "Core/Src/syscalls.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 2,
 			"compileGroupIndex" : 2,
 			"path" : "startup_stm32g431xx.s",
 			"sourceGroupIndex" : 1

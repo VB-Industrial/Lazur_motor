@@ -21,7 +21,7 @@ endif()
 
 # Set the project name
 set(CMAKE_PROJECT_NAME Lazur_motor)
-add_definitions(-DARM_MATH_CM4 -D__FPU_PRESENT -DMONITOR -DSTM32) #-DENABLE_CALIBRATION) #to enable calibration upon start temp disabled
+add_definitions(-DARM_MATH_CM4 -D__FPU_PRESENT -DSTM32_G -DMONITOR) #-DENABLE_CALIBRATION) #to enable calibration upon start temp disabled
 
 # Include toolchain file
 include("cmake/gcc-arm-none-eabi.cmake")
@@ -46,7 +46,7 @@ add_subdirectory(cmake/stm32cubemx)
 # Add linked libraries
 target_link_libraries(${CMAKE_PROJECT_NAME}
     stm32cubemx
-    #${CMAKE_CURRENT_SOURCE_DIR}/Drivers/CMSIS/DSP/GCC/libarm_cortexM4lf_math.a
+    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/CMSIS/DSP/Lib/GCC/libarm_cortexM4lf_math.a
     # Add user defined libraries
 )
 
@@ -55,22 +55,21 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined library search paths
 )
 
-file(GLOB_RECURSE MAIN_SOURCES "Src/*.c")
 file(GLOB_RECURSE USER_SOURCES "App/*.cpp")
 file(GLOB_RECURSE LIBCXXCANARD_SOURCES "VB/libcxxcanard/cyphal/*.cpp" "VB/libcxxcanard/libs/*.c")
 file(GLOB_RECURSE LIBVOLTBRO_SOURCES "VB/libvoltbro/*.cpp" "VB/libvoltbro/*.c")
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-        ${MAIN_SOURCES}
         ${USER_SOURCES}
         ${LIBVOLTBRO_SOURCES}
         ${LIBCXXCANARD_SOURCES}
 )
+
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
-        Inc
         App
         VB/libcxxcanard
         VB/libcxxcanard/libs
         VB/libvoltbro
+        VB/libvoltbro/voltbro
         Drivers/CMSIS/DSP/Include
 )
 
